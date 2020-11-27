@@ -37,8 +37,8 @@ def solver(fpath):
                     nodes[node2].isEndNode = True
         maxPath = None 
         minPath = None
-        for leaf in nodes:                          # traversing through the tree and finding leafing and then i 
-            if leaf.isLeaf:                         # move up looking for a dangling tree 
+        for leaf in nodes:                          # traversing through the tree looking for a leaf and then i 
+            if leaf.isLeaf:                         # move up looking for a dangling tree path  
                 currPath = Path(leaf.tag)
                 lastVisitedNode = leaf.tag 
                 currNode = leaf
